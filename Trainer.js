@@ -1,10 +1,10 @@
-javascript: 
 var tellTrainTime = 1;
 var tellPercentDone = 1;
 var tellInsufficientRes = 1;
 var vilConfig;
 var resPercentage;
 var research;
+
 var configFirst = [0, 0, 5600, 400, 3195, 0, 220, 10];
 var configOffensive = [0, 0, 5914, 200, 3309, 0, 220, 10];
 var configDefensive = [8645, 0, 0, 200, 0, 1921, 10, 10];
@@ -17,13 +17,12 @@ function V1() {
 	resPercentage = prompt('What percentage of resources would you like to use?', 100);
 	research = [1, 1, 1, 1, 1, 1, 1, 1];
 }
-if (window.location.href.indexOf(villageIDs[0]) > -1) {
-	V1();
+
+for (var x = 0; x < villageIDs.length; x++) {
+	if (window.location.href.indexOf(villageIDs[x]) > -1) {
+		window["V" + x]();
+	}	
 }
-else {
-	alert("Village Not Found");
-}
-/**/
 function Train() {
 	if (research[0] == 1) {
 		document.getElementById('spear_0').value = 0;

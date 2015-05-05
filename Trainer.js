@@ -8,9 +8,8 @@ var research;
 var configFirst = [0, 0, 5600, 400, 3195, 0, 220, 10];
 var configOffensive = [0, 0, 5914, 200, 3309, 0, 220, 10];
 var configDefensive = [8645, 0, 0, 200, 0, 1921, 10, 10];
-var configChurch = [3660, 0, 0, 200, 0, 762, 10, 10];
 var configScout = [0, 0, 0, 10315, 0, 0, 20, 0];
-var villageIDs = [142857];
+var villageIDs = [29893];
 
 function V1() {
 	vilConfig = configFirst;

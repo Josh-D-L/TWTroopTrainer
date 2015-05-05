@@ -1,5 +1,15 @@
 <HTML>
   <BODY>
+    Troop configurations: 
+    <br>
+    <button onclick="function(){$( '.config' )[0].clone().appendTo( '.configs' )"></button>
+    <div class="configs">
+      <div class="config">
+      <input type="text" class="name">Configuration Name (Letters only, no numbers, commas, spaces, etc.)
+      <br>
+      <input type="number" class="spear">
+    </div>
+    </div>
     <script>
       function isAlpha(string) {
         var patt = /^[a-zA-Z]+$/;
@@ -22,7 +32,6 @@
       	var configTroopsList = [];
       	var configNameList = [];
       	var Check;
-      	alert("We will now create your troop configurations!");
       	while (configCreator !== false) {
       		configConfirmName = false;
       		while(configConfirmName === false) {
@@ -163,7 +172,7 @@
       }
       alert("Before you can start, you will need to know the research status of all of your villages, what their ID is in the URL of any page where you are in that village, and your desired troop counts");
       var code = ["javascript: var tellTrainTime = ", ";var tellPercentDone = ", ";var tellInsufficientRes =", "var vilConfig;var resPercentage;var research;"];
-      var start = confirm("This is the setup Code for ZPieGuy's Troop Trainer          Would you like to proceed?                                                         Press Okay to continue, or Cancel to exit");
+      var start = confirm("This is the setup program for ZPieGuy's Troop Trainer    Would you like to proceed?                                                         Press Okay to continue, or Cancel to exit");
       if (start === true) {
       	Setup();
       }

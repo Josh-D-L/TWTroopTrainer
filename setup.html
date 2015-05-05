@@ -2,7 +2,7 @@
   <BODY>
     Troop configurations: 
     <br>
-    <button onclick="function(){$( '.config' )[0].clone().appendTo( '.configs' )">Add another</button>
+    <button onclick="function(){document.getElementsByClassName('config')[0].clone().appendTo( '.configs' )">Add another</button>
     <div class="configs">
       <div class="config">
       <input type="text" class="name">Configuration Name (Letters only, no numbers, commas, spaces, etc.)
